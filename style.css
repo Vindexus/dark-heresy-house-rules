@@ -54,7 +54,7 @@ table {
 /*================*/
 
 body {
-    background: url(./img/space.png);
+    background: url(./img/space.png) #000;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'EB Garamond', serif;
