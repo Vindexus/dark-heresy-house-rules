@@ -74,7 +74,7 @@ h1,h2,h3,h4,h5 {
     font-weight: bold;
     color: #1f0703;
     border-bottom: 2px solid #1f0703;
-    margin: 2em 0 1em;
+    margin: 1em 0 0.5em;
     line-height: 1;
 }
 
@@ -121,11 +121,10 @@ h3 {
 #content {
     margin: 1em auto;
     padding: 1.5em 1em;
-    max-width: 960px;
-    background: rgba(255, 255, 255, 0.75);
+    max-width: 760px;
     border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
-    background: url('./img/parchment.jpg');
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.75) url('./img/parchment.jpg');
 }
 
 hr {
@@ -148,9 +147,18 @@ blockquote {
     background: rgba(255, 255, 255, 0.5);
 }
 
-@media only screen and (max-width: 600px) {
-    #content {
-        margin: 0.5em 2.5%;
-        width: 95%;
+@media screen and (max-device-width:960px), screen and (max-width:960px) {
+    body {
+        padding: 0 0.5em;
+    }
+
+    div#content {
+        margin: 0.5em 0;
+        width: 100%;
+        max-width: none;
+        border-radius: 10px;
+    }
+    h2,h3,h4,h5 {
+        margin: 2em 0 1em !important;
     }
 }
